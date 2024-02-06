@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { selectTotalCartQuantity, selectTotalCartPrice } from './cartSlice';
 import { formatCurrency } from '../../utils/helpers';
+import { selectTotalCartQuantity, selectTotalCartPrice } from './cartSlice';
 import { useAppSelector } from '../../hooks';
 
 function CartOverview() {

@@ -1,5 +1,5 @@
-import { useAppDispatch } from '../../hooks';
 import Button from '../../ui/Button';
+import { useAppDispatch } from '../../hooks';
 import { deleteItem } from './cartSlice';
 import type { CartItemType } from './cartSlice';
 

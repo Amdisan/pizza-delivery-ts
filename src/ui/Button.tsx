@@ -13,7 +13,7 @@ type ButtonProps = {
   disabled?: boolean;
   to?: string;
   type: keyof ButtonStyles;
-  onClick?: (arg: React.MouseEvent<HTMLInputElement, MouseEvent>) => void;
+  onClick?: (arg: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 function Button({ children, disabled, to, type, onClick }: ButtonProps) {

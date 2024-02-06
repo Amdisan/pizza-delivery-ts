@@ -6,15 +6,15 @@ import {
   useNavigation,
 } from 'react-router-dom';
 import { useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks';
-import { clearCart, selectCart, selectTotalCartPrice } from '../cart/cartSlice';
-import { createOrder } from '../../services/apiRestaurant';
-import { store } from '../../store';
-import { formatCurrency } from '../../utils/helpers';
-import { fetchAddress } from '../user/userSlice';
 import Button from '../../ui/Button';
 import EmptyCart from '../cart/EmptyCart';
+import { createOrder } from '../../services/apiRestaurant';
 import type { CreateOrderType } from '../../services/apiRestaurant';
+import { store } from '../../store';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+import { clearCart, selectCart, selectTotalCartPrice } from '../cart/cartSlice';
+import { fetchAddress } from '../user/userSlice';
+import { formatCurrency } from '../../utils/helpers';
 
 type ValidationError = {
   phone?: string;

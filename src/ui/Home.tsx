@@ -1,6 +1,6 @@
 import { useAppSelector } from '../hooks';
-import CreateUser from '../features/user/CreateUser';
 import Button from './Button';
+import CreateUser from '../features/user/CreateUser';
 
 function Home() {
   const username = useAppSelector((state) => state.user.username);
